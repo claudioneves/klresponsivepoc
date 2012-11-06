@@ -130,12 +130,12 @@ hr {
 }
 #klresponsivepoc ul.collection {
 	margin-top: 16px;
+	overflow: auto;
 }
 #klresponsivepoc ul.collection li {
 	font-weight: bold;
 	clear: left;
 	padding-top: 8px;
-	overflow: auto;
 }
 #klresponsivepoc ul.collection li:first-child {
 	padding-top: 0;
@@ -159,8 +159,11 @@ hr {
 	float: left;
 	clear: none;
 	width: 148px;
-	padding-top: 0;
-	padding-right: 8px;
+	padding-top: 8px;
+	padding-right: 4px;
+}
+#klresponsivepoc ul.collection.inline li:nth-child(2n+3) {
+		clear: left;
 }
 #klresponsivepoc ul.collection.inline div.emp {
 	float: none;
