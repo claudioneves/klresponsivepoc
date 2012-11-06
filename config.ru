@@ -1,2 +1,3 @@
 require './main.rb'
-run Application 
+
+run Application
