@@ -31,7 +31,7 @@ hr {
     margin: 0px auto;
     max-width: 640px;
 	height: 48px;
-	background: #4D4D4D url('../images/banner.gif') no-repeat left top;
+	background: #4D4D4D url('../images/banner-bitesize.gif') no-repeat 8px 8px;
 }
 h2.grey {
     color: #808080;
@@ -141,7 +141,7 @@ div.main h1 {
     position: absolute;
     left: 8px;
     top: 25%;
-	background: url('../images/back-arrow.png') no-repeat center center;
+	background: url('../images/back-arrow-grey.png') no-repeat center center;
 }
 #secondary-nav .is-forward a{
 	padding-right: 29px;
@@ -154,11 +154,11 @@ div.main h1 {
     position: absolute;
     right: 8px;
     top: 25%;
-    background: url('../images/forward-arrow.png') no-repeat center center;
+    background: url('../images/forward-arrow-grey.png') no-repeat center center;
 }
 .module {
 	padding: 0;
-	margin-bottom: 24px;
+	margin-bottom: 40px;
 }
 .module h2 {
 	padding-bottom: 16px;
@@ -169,7 +169,7 @@ div.main h1 {
 	padding: 0 0 8px 8px;
 }
 .tabbed h2{
-	padding: 16px 0 16px 0;
+	padding: 16px 0 16px 10px;
 }
 div.asset {
 	width: 100%;
@@ -239,6 +239,9 @@ div.asset img{
 }
 ul.collection li:last-child {
 	padding-bottom: 0;
+}
+.tabbox ul.collection li:last-child {
+	padding-bottom: 8px;
 }
 ul.inline{
 	margin-left:-8px;
@@ -319,23 +322,12 @@ footer#gcse-subjects h2 {
 	font-weight:bold;
 	position:relative;
 }
-/*
-footer#gcse-subjects h2:after {
-    content: " ";
-    width: 13px;
-    height: 17px;
-    display: block;
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    background: url('../images/back-arrow.png') no-repeat center center;
-}
-*/
 .language-selector{
     background: #3C3C3C;
     padding: 8px;
     margin: 0px;
     overflow: hidden;
+    clear: left;
 }
 .language-selector li{
 	float: left;
@@ -344,18 +336,11 @@ footer#gcse-subjects h2:after {
 }
 .language-selector a{
 	color: #C0C0C0;
+	display: block;
 }
 .language-selector ol li:first-child a {
-	padding-left: 0;
-	width: 80px;
-	position: relative;
-}
-.language-selector ol li:first-child a:after {
-	content: "|";
-	color: #C0C0C0;
-	position: absolute;
-	top: 0;
-	right: 0;
+	border-right: 1px solid #C0C0C0;
+	padding-right: 10px;
 }
 .language-selector ol li:last-child a {
 	margin-left: 10px;	
@@ -391,8 +376,10 @@ footer#gcse-subjects h2:after {
 }
 
 
-/** MOBILE STYLES */
-@media screen and (min-width: 320px) and (max-width: 599px) {
+/** Smartphones **/
+/** iPhone portrait: 320px **/
+/** iPhone landscape: 480px **/
+@media screen and (min-width: 320px) and (max-width: 671px) {
 	
 	#primary-nav {
 		font-size: 1.4em;
@@ -442,8 +429,11 @@ footer#gcse-subjects h2:after {
 }
 
 
-/** TABLET STYLES */
-@media screen and (min-width: 600px) and (max-width: 911px) {
+/** Tablets **/
+/** Google Nexus landscape: 720px **/
+/** iPad portrait: 768px **/
+/** iPad landscape: 1024px **/
+@media screen and (min-width: 672px) and (max-width: 911px) {
 	
 	#primary-nav {
 		font-size: 1.4em;
@@ -475,6 +465,9 @@ footer#gcse-subjects h2:after {
 		font-size: 1.8em;
 		line-height: 20px;
 	}
+	#secondary-nav{
+		margin-top: 0;
+	}
 	footer#gcse-subjects h2 {
 		font-size: 1.6em;
 	}
@@ -484,30 +477,31 @@ footer#gcse-subjects h2:after {
 	.language-selector {
     	font-size: 1.6em;
 	}	
-}
 
 
-@media screen and (min-width: 600px) {
-
+/* This block was being used by tablets and desktop */
+	 h1#banner {
+		height: 76px;
+		background: #4D4D4D url('../images/banner-bitesize.gif') no-repeat 16px 24px;
+	}
 	div.main {
 		margin: 24px auto;
-		max-width: 640px;
-		padding: 0 16px;
-	}
-	footer#gcse-subjects .module-level-embed-wrapper, footer#gcse-subjects .language-selector {
-		max-width: 640px;
-		margin: 0px auto;
+		width: 640px;
+		padding: 0 16px 0 16px;
+		
 	}
 	div.asset {
 		margin: 24px 0
 	}
 	.module {
-		width: 48.75%;
-		max-width: 312px;
+		width: 312px;
 		float: left;
 	}
 	.module:nth-child(2n) {
 		float: right;
+	}
+	.module:nth-child(2n+3) {
+		margin-right: 16px;
 	}
 	.tabbed h2{
 		margin: 0px 16px;
@@ -532,6 +526,10 @@ footer#gcse-subjects h2:after {
     	height: 74px;
     	margin: 0 16px 0 8px;
     }
+	footer#gcse-subjects .module-level-embed-wrapper, footer#gcse-subjects .language-selector {
+		max-width: 640px;
+		margin: 0px auto;
+	}
 }
 
 
