@@ -1,2 +1,7 @@
+.gitignore
 .DS_Store
 .project
+.settings/
+public/.DS_Store
+views/.DS_Store
+views/modules/.DS_Store
