@@ -24,12 +24,10 @@ hr {
 	overflow: hidden;
 }
 #primary-nav nav{
-	max-width: 640px;
     margin: 0px auto;
 }
- h1#banner {
+h1#banner {
     margin: 0px auto;
-    max-width: 640px;
 	height: 48px;
 	background: #4D4D4D url('../images/banner-bitesize.gif') no-repeat 8px 8px;
 }
@@ -380,9 +378,17 @@ footer#gcse-subjects h2 {
 /** iPhone portrait: 320px **/
 /** iPhone landscape: 480px **/
 @media screen and (min-width: 320px) and (max-width: 671px) {
-	
+	#primary-nav nav{
+		max-width: 671px;
+	}
+	h1#banner {
+	    max-width: 671px;
+	}	
 	#primary-nav {
 		font-size: 1.4em;
+	}
+	div.main {
+		max-width: 671px;
 	}
 	div.main #breadcrumb-nav{
 		font-size: 1.4em;
@@ -432,8 +438,21 @@ footer#gcse-subjects h2 {
 /** Tablets **/
 /** Google Nexus landscape: 720px **/
 /** iPad portrait: 768px **/
-/** iPad landscape: 1024px **/
-@media screen and (min-width: 672px) and (max-width: 911px) {
+@media screen and (min-width: 672px) and (max-width: 1007px) {
+	
+	 #primary-nav nav{
+		max-width: 672px;
+	}
+	 h1#banner {
+		width: 672px;
+		height: 76px;
+		background: #4D4D4D url('../images/banner-bitesize.gif') no-repeat 16px 24px;
+	}
+	div.main {
+		margin: 24px auto;
+		width: 640px;
+		padding: 0 16px 0 16px;		
+	}
 	
 	#primary-nav {
 		font-size: 1.4em;
@@ -445,15 +464,15 @@ footer#gcse-subjects h2 {
 		font-size: 3.6em;
 		line-height: 40px;
 	}
- 	.main p{
-		font-size: 1.8em;
-		line-height: 24px;
-	}
 	h2 {
 		font-size: 2.4em;
 		line-height: 28px;
 	}
 	h3 {
+		font-size: 1.8em;
+		line-height: 24px;
+	}
+ 	.main p{
 		font-size: 1.8em;
 		line-height: 24px;
 	}
@@ -467,28 +486,6 @@ footer#gcse-subjects h2 {
 	}
 	#secondary-nav{
 		margin-top: 0;
-	}
-	footer#gcse-subjects h2 {
-		font-size: 1.6em;
-	}
-	footer#gcse-subjects a {
-		line-height: 1.4em;
-	}
-	.language-selector {
-    	font-size: 1.6em;
-	}	
-
-
-/* This block was being used by tablets and desktop */
-	 h1#banner {
-		height: 76px;
-		background: #4D4D4D url('../images/banner-bitesize.gif') no-repeat 16px 24px;
-	}
-	div.main {
-		margin: 24px auto;
-		width: 640px;
-		padding: 0 16px 0 16px;
-		
 	}
 	div.asset {
 		margin: 24px 0
@@ -526,6 +523,15 @@ footer#gcse-subjects h2 {
     	height: 74px;
     	margin: 0 16px 0 8px;
     }
+	footer#gcse-subjects h2 {
+		font-size: 1.6em;
+	}
+	footer#gcse-subjects a {
+		line-height: 1.4em;
+	}
+	.language-selector {
+    	font-size: 1.6em;
+	}
 	footer#gcse-subjects .module-level-embed-wrapper, footer#gcse-subjects .language-selector {
 		max-width: 640px;
 		margin: 0px auto;
@@ -533,14 +539,31 @@ footer#gcse-subjects h2 {
 }
 
 
+/** iPad landscape: 1024px **/
+@media screen and (min-width: 1008px) {
 
-@media screen and (min-width: 912px) {
-
+    #primary-nav nav {
+    	width: 1008px;
+    }
+	h1#banner {
+		width: 1008px;
+		height: 76px;
+		background: #4D4D4D url('../images/banner-bitesize.gif') no-repeat 16px 24px;
+	}
+	div.main {
+		margin: 24px auto;
+		width: 976px;
+		padding: 0 16px 0 16px;		
+	}
 	#primary-nav {
 		font-size: 1.4em;
 	}
 	div.main #breadcrumb-nav{
 		font-size: 1.3em;
+	}
+	div.main {
+		width: 1008px;
+		overflow:hidden;
 	}
  	h1 {
 		font-size: 3.2em;
@@ -575,11 +598,6 @@ footer#gcse-subjects h2 {
 	.language-selector {
     	font-size: 1.6em;
 	}
-	
-	div.main {
-		max-width:976px;
-		overflow:hidden;
-	}
 	footer#gcse-subjects h2{
 		padding:16px;
 	}
@@ -589,7 +607,6 @@ footer#gcse-subjects h2 {
 	.language-selector ol{
 		padding:0px 16px;
 	}
-
 	.article-body {
 		max-width: 640px;
 		float: left;
@@ -602,13 +619,6 @@ footer#gcse-subjects h2 {
     .module {
     	width:100%;
     	max-width:inherit;
-    }
-
-    h1#banner {
-    	max-width: 976px;
-    }
-    #primary-nav nav {
-    	max-width: 976px;
     }
     .module-level-embed .subjects {
     	-moz-column-count: 6;
