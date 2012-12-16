@@ -106,7 +106,6 @@ div.main h1 {
 }
 .main p{
 	color: #4D4D4D;
-	max-width: 35em; /* ~70 characters */
 }
 #secondary-nav{
 	border-bottom:0px;
@@ -400,6 +399,7 @@ footer#gcse-subjects h2 {
  	.main p{
 		font-size: 1.6em;
 		line-height: 20px;
+		max-width: 35em;
 	}
 	h2 {
 		font-size: 1.6em;

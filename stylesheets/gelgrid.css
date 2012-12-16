@@ -1,0 +1,76 @@
+#primary-nav nav{
+	margin-right: 11px;
+}
+
+/** Tablets **/
+/** Google Nexus landscape: 720px **/
+/** iPad portrait: 768px **/
+@media screen and (min-width: 672px) and (max-width: 1007px) {
+	
+	#primary-nav nav{
+		margin-left: 0;
+		max-width: 100%;
+		margin-right: 11px;
+	}
+	h1#banner {
+		width: 100%;		
+	}
+	div.main {
+		margin-left: 16px;		
+		width: 95.5%;
+		padding: 0;		
+	}
+	.language-selector {
+		padding-left: 0;
+	}
+	
+	.language-selector ol {
+    	margin-left: 16px;
+    	padding: 0;
+	}
+}
+
+/** iPad landscape: 1024px **/
+@media screen and (min-width: 1008px) {
+	
+	#primary-nav nav{
+		margin-left: 0;
+		max-width: 98.5%;
+		margin-right: 11px;
+	}
+	h1#banner {
+		width: 100%;		
+	}
+	div.main {
+		margin-left: 16px;		
+		width: 95.5%;
+		padding: 0;		
+	}
+	.language-selector {
+		padding-left: 0;
+	}
+	
+	.language-selector ol {
+    	margin-left: 16px;
+    	padding: 0;
+	}	
+	
+}
+@media screen and (min-width: 1024px) {
+	
+	#primary-nav nav{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
