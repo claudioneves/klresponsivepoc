@@ -544,7 +544,7 @@ footer#gcse-subjects h2 {
 @media screen and (min-width: 912px) {
 
     #primary-nav nav {
-    	/*width: 100%;*/
+    	width: 96%;
     }
 	h1#banner {
 		/*width: 100%;*/
