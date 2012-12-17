@@ -544,10 +544,10 @@ footer#gcse-subjects h2 {
 @media screen and (min-width: 912px) {
 
     #primary-nav nav {
-    	width: 96%;
+    	max-width: 976px;
     }
 	h1#banner {
-		/*width: 100%;*/
+		max-width: 976px;
 		height: 76px;
 		background: #4D4D4D url('../images/banner-neutral.gif') no-repeat 16px 24px;
 	}
