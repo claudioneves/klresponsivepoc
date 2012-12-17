@@ -29,7 +29,7 @@ hr {
 h1#banner {
     margin: 0px auto;
 	height: 48px;
-	background: #4D4D4D url('../images/banner-bitesize.gif') no-repeat 8px 8px;
+	background: #4D4D4D url('../images/banner-neutral.gif') no-repeat 8px 8px;
 }
 h2.grey {
     color: #808080;
@@ -446,7 +446,7 @@ footer#gcse-subjects h2 {
 	 h1#banner {
 		width: 672px;
 		height: 76px;
-		background: #4D4D4D url('../images/banner-bitesize.gif') no-repeat 16px 24px;
+		background: #4D4D4D url('../images/banner-neutral.gif') no-repeat 16px 24px;
 	}
 	div.main {
 		margin: 24px auto;
@@ -540,30 +540,30 @@ footer#gcse-subjects h2 {
 
 
 /** iPad landscape: 1024px **/
+/** Desktop **/
 @media screen and (min-width: 1008px) {
 
     #primary-nav nav {
-    	width: 1008px;
+    	/*width: 100%;*/
     }
 	h1#banner {
-		width: 1008px;
+		/*width: 100%;*/
 		height: 76px;
-		background: #4D4D4D url('../images/banner-bitesize.gif') no-repeat 16px 24px;
+		background: #4D4D4D url('../images/banner-neutral.gif') no-repeat 16px 24px;
 	}
 	div.main {
 		margin: 24px auto;
-		width: 976px;
+		max-width: 976px;
+		padding: 0;	
+		/*max-width: 944px;*/
 		padding: 0 16px 0 16px;		
+		overflow:hidden;		
 	}
 	#primary-nav {
 		font-size: 1.4em;
 	}
 	div.main #breadcrumb-nav{
 		font-size: 1.3em;
-	}
-	div.main {
-		width: 1008px;
-		overflow:hidden;
 	}
  	h1 {
 		font-size: 3.2em;
@@ -588,6 +588,17 @@ footer#gcse-subjects h2 {
 	.module ul li {
 		font-size: 1.4em;
 		line-height: 18px;
+	}
+	ul.inline{
+		margin-left: 0;
+		padding: 0;
+		width: 320px;
+	}
+	ul.collection.inline li {
+		padding-left: 0;
+	}
+	ul.collection.inline li:nth-child(2n) {
+		padding-left: 16px;
 	}
 	footer#gcse-subjects h2 {
 		font-size: 1.6em;
@@ -615,6 +626,8 @@ footer#gcse-subjects h2 {
     	max-width: 320px;
     	position: absolute;
     	margin: 0 16px 0 656px;
+    	overflow: auto;
+    	width: 100%;
     }
     .module {
     	width:100%;
@@ -627,6 +640,9 @@ footer#gcse-subjects h2 {
     	-webkit-column-gap: 16px;
     	column-count: 6;
     	column-gap: 16px;
+  	}
+  	.link-box {
+  		margin-bottom: 0;
   	}
 }
 
