@@ -545,6 +545,7 @@ footer#gcse-subjects h2 {
 
     #primary-nav nav {
     	max-width: 976px;
+    	padding: 0 16px;
     }
 	h1#banner {
 		max-width: 976px;
