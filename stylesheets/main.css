@@ -368,9 +368,6 @@ footer#gcse-subjects h2 {
 	display: block;
 	margin: 10px 16px;
 }
-.module-level-embed .subjects a {
-	
-}
 
 
 /** Smartphones **/
@@ -446,7 +443,7 @@ footer#gcse-subjects h2 {
 	 h1#banner {
 		width: 672px;
 		height: 76px;
-		background: #4D4D4D url('../images/banner-neutral.gif') no-repeat 16px 24px;
+		background-position: 16px 24px;
 	}
 	div.main {
 		margin: 24px auto;
@@ -550,7 +547,7 @@ footer#gcse-subjects h2 {
 	h1#banner {
 		max-width: 976px;
 		height: 76px;
-		background: #4D4D4D url('../images/banner-neutral.gif') no-repeat 16px 24px;
+		background-position: 16px 24px;
         padding: 0 16px;
 	}
 	div.main {
