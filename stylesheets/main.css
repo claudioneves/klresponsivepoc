@@ -545,11 +545,13 @@ footer#gcse-subjects h2 {
 
     #primary-nav nav {
     	max-width: 976px;
+        padding: 0 16px;
     }
 	h1#banner {
 		max-width: 976px;
 		height: 76px;
 		background: #4D4D4D url('../images/banner-neutral.gif') no-repeat 16px 24px;
+        padding: 0 16px;
 	}
 	div.main {
 		margin: 24px auto;
