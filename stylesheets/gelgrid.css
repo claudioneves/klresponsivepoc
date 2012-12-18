@@ -34,18 +34,25 @@ div#primary-nav li:last-child a {
         margin-right: 0;
         margin-left: 0;
     }
-    
+    div.main {
+        /*width: 772px;*/ /* 640 + 66 + 66 */
+        width: 95%;
+    }
+    div.asset img{
+        width: 100%;
+    }
 	.language-selector {
 		padding-left: 16px;
 	}
 }
-
+/*
 @media screen and (min-width: 772px) and (max-width: 911px) {
     div.main {
-        width: 772px; /* 640 + 66 + 66 */
+        width: 772px;
     }
 
 }
+*/
 
 /** iPad landscape: 1024px **/
 /** Desktop **/

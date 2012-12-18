@@ -177,10 +177,11 @@ div.asset img{
 	max-width: 100%;
 	height: auto;
 }
- div.emp {
+div.emp {
 	position: relative;
+    /*background-color: #fff !important;*/
 }
- div.emp a.play {
+div.emp a.play {
 	display: block;
 	position: absolute;
 	bottom: 0px;
@@ -189,7 +190,7 @@ div.asset img{
 	height: 80px;
 	background-color: #4D4D4D;
 }
- div.emp a.play:before {
+div.emp a.play:before {
    display: block;
    position: absolute;
    top: 24px;
@@ -203,12 +204,14 @@ div.asset img{
    border-color: transparent;
    border-left-color: #ffffff;	
 }
- div.infographic {}
- div.component.full-width {
+div.image, div.infographic {
+    background-color: #fff !important;
+}
+div.component.full-width {
  	float: left;
  	clear: both;
- }
- .module .asset {
+}
+.module .asset {
 	width: 148px;
 	height: 83px;
 	margin: 0;
