@@ -177,10 +177,11 @@ div.asset img{
 	max-width: 100%;
 	height: auto;
 }
- div.emp {
+div.emp {
 	position: relative;
+    /*background-color: #fff !important;*/
 }
- div.emp a.play {
+div.emp a.play {
 	display: block;
 	position: absolute;
 	bottom: 0px;
@@ -189,7 +190,7 @@ div.asset img{
 	height: 80px;
 	background-color: #4D4D4D;
 }
- div.emp a.play:before {
+div.emp a.play:before {
    display: block;
    position: absolute;
    top: 24px;
@@ -203,12 +204,14 @@ div.asset img{
    border-color: transparent;
    border-left-color: #ffffff;	
 }
- div.infographic {}
- div.component.full-width {
+div.image, div.infographic {
+    background-color: #fff !important;
+}
+div.component.full-width {
  	float: left;
  	clear: both;
- }
- .module .asset {
+}
+.module .asset {
 	width: 148px;
 	height: 83px;
 	margin: 0;
@@ -368,9 +371,6 @@ footer#gcse-subjects h2 {
 	display: block;
 	margin: 10px 16px;
 }
-.module-level-embed .subjects a {
-	
-}
 
 
 /** Smartphones **/
@@ -446,7 +446,7 @@ footer#gcse-subjects h2 {
 	 h1#banner {
 		width: 672px;
 		height: 76px;
-		background: #4D4D4D url('../images/banner-neutral.gif') no-repeat 16px 24px;
+		background-position: 16px 24px;
 	}
 	div.main {
 		margin: 24px auto;
@@ -545,12 +545,13 @@ footer#gcse-subjects h2 {
 
     #primary-nav nav {
     	max-width: 976px;
-    	padding: 0 16px;
+        padding: 0 16px;
     }
 	h1#banner {
 		max-width: 976px;
 		height: 76px;
-		background: #4D4D4D url('../images/banner-neutral.gif') no-repeat 16px 24px;
+		background-position: 16px 24px;
+        padding: 0 16px;
 	}
 	div.main {
 		margin: 24px auto;
