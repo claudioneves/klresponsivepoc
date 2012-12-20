@@ -52,6 +52,13 @@ div#primary-nav li:last-child a {
     }
 }
 
+@media screen and (min-width: 600px) and (max-width: 671px) {
+	.module {
+    	/*width: 284.5px;*/
+    	/*width: 37%;*/
+    	width: 100%;
+    }	
+}
 
 
 /** iPad landscape: 1024px **/
