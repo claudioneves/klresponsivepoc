@@ -38,13 +38,10 @@ div#primary-nav li:last-child a {
 	}
 	div.main {
         width: 79.5%;
-        /*min-width: 640px;*/
         margin-left: 79px;
         padding: 0;
     }    
     .module {
-    	/*width: 284.5px;*/
-    	/*width: 37%;*/
     	width: 48%;
     }
     div.subcolumn {
@@ -54,8 +51,6 @@ div#primary-nav li:last-child a {
 
 @media screen and (min-width: 600px) and (max-width: 671px) {
 	.module {
-    	/*width: 284.5px;*/
-    	/*width: 37%;*/
     	width: 100%;
     }	
 }
@@ -76,7 +71,4 @@ div#primary-nav li:last-child a {
 	}
 }
 
-@media screen and (min-width: 1008px) {
-       /*max-width: ;*/
-}
 
